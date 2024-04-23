@@ -1,0 +1,18 @@
+{
+  "name": "techfeed-20240424-svelte5",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --base /techfeed-20240424-svelte5",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "packageManager": "pnpm@8.15.7",
+  "dependencies": {
+    "@slidev/cli": "^0.49.0-beta.4",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "svelte": "5.0.0-next.110",
+    "vue": "^3.4.22"
+  }
+}
