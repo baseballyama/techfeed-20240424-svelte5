@@ -1,0 +1,10 @@
+import{_ as l}from"./CodeBlockWrapper-D8jt2pug.js";import{o as r,c as o,k as e,l as p,m as c,q as h,s as k,A as a,e as s,a6 as i}from"../modules/vue--qgEIiFj.js";import{I as d}from"./default-BbJJnKza.js";import{_ as m,al as t}from"../index-DrpjUUa3.js";import{p as _,u as f,f as u}from"./context-D5ija88E.js";import"../modules/unplugin-icons-DINHFo6A.js";import"../modules/shiki-Bd1ogawb.js";const g=s("pre",{class:"shiki shiki-themes vitesse-dark vitesse-light slidev-code",style:{"--shiki-dark":"#dbd7caee","--shiki-light":"#393a34","--shiki-dark-bg":"#121212","--shiki-light-bg":"#ffffff"}},[s("code",{class:"language-diff"},[s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#DBD7CAEE","--shiki-light":"#393A34"}},"<!-- 一部抜粋 -->")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#DBD7CAEE","--shiki-light":"#393A34"}},"<script>")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#DBD7CAEE","--shiki-light":"#393A34"}},"	let count = 0;")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#FDAEB7","--shiki-light":"#B31D28"}},"-	$: doubled = count * 2;")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#85E89D","--shiki-light":"#22863A"}},"+ let doubled = $derived(count * 2);")]),i(`
+`),s("span",{class:"line"}),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#DBD7CAEE","--shiki-light":"#393A34"}},"	function increment() {")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#DBD7CAEE","--shiki-light":"#393A34"}},"		count += 1;")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#DBD7CAEE","--shiki-light":"#393A34"}},"	}")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#DBD7CAEE","--shiki-light":"#393A34"}},"<\/script>")])])],-1),A={__name:"16",setup(D){return _(t),f(),(E,B)=>{const n=l;return r(),o(d,h(k(a(u)(a(t),15))),{default:e(()=>[p(n,c({},{ranges:[]}),{default:e(()=>[g]),_:1},16)]),_:1},16)}}},V=m(A,[["__file","/@slidev/slides/16.md"]]);export{V as default};
