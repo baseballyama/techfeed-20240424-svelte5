@@ -9,6 +9,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+colorSchema: dark
 ---
 
 <h2>baseballyama</h2>
@@ -16,6 +17,25 @@ mdc: true
 <style>
 h2 {
   margin-top: 432px;
+}
+</style>
+
+---
+
+# 注意
+
+- このスライドはモバイル環境だと正しく開けない場合があります (REPLを多用しているため)
+- モバイル環境でスライドを参照したい場合は [Speaker Deck](https://speakerdeck.com/baseballyama/techfeed-27-svelte-73baf778-a076-4aea-8e33-d97ca920e586) にアップロードした資料を参照ください
+- X (Twitter) にもスライドを投稿したのでそこからもスライドにアクセスできます ([@baseballyama\_](https://twitter.com/baseballyama_))
+
+<img id="speakerdeck" src="/speakerdeck.png" />
+
+<style>
+#speakerdeck {
+  position: fixed;
+  top: 200px;
+  left: calc(50% - 150px);
+  height: 300px;
 }
 </style>
 
@@ -317,7 +337,7 @@ svelte5="https://svelte-5-preview.vercel.app/#H4sIAAAAAAAAE0WOu27DMAxFf0UgOtiokc
 
 # Runes (その他)
 
-- `beforeUpdate` / `afterUpdate` は廃止されます。
+- `beforeUpdate` / `afterUpdate` は Svelte 6 で廃止されます。
 - `$effect.pre` / `$effect` を使用してください。
 
 ---
@@ -539,6 +559,32 @@ hello!
 
 ---
 
+# Svelte 4 からの移行
+
+- Svelte 5 は Svelte 4 までの機能をサポートしています
+- 1コンポーネントずつ漸進的に移行可能です
+- 実際に私も個人的に管理している SvelteKit アプリを移行しましたが、ライブラリバージョンを Svelte 5 に上げただけでも正しく動作しました
+- Svelte 5 では Svelte 4 までのテストが通ることを確認しています
+- 詳細は [ステータスページ](https://svelte-5-preview.vercel.app/status) から確認可能です
+
+---
+
+<ReplSvelte5
+svelte5="https://svelte-5-preview.vercel.app/#H4sIAAAAAAAAE0WNQQoCMQxFrxKyUhxQt3VG8BzWhdYMFDtpaVNBSu8u7YAu8_7_LwVn6yihuhbk-0Ko8BICDiif0I70JieEAyafo2lkTCbaIGfNWhwJGJ9ZYILDSXNjc2Yj1jNYNpEWYtlsobREy9rdTXBsZamax_1fx-Mji3gGz8o4a15T-Tlq_9dpUlC6qM_XSZ_jgIt_2tnSE5XETPVWv1eINcbgAAAA" />
+
+---
+
+# ベンチマーク
+
+Svelte は、ベンチマークを追求するのではなく、実際的な開発者体験とユーザー体験を追求しています。<br>
+よって、ベンチマークを重要視していません。<br>
+この考え方に基づき、この発表でもベンチマークは紹介しません<br>
+但し `js-framework-benchmark` の結果はかなり良いです。<br>
+(ベンチマーク用の関数を一切用意していないにも関わらず!)<br>
+興味のある方は一度ご確認ください。
+
+---
+
 # まとめ (今日ご紹介したもの)
 
 - (チーム体制) 元 React コアチームのメンバーが参加しフルタイム3名体制になった
@@ -551,10 +597,10 @@ hello!
   - `createEventDispatcher` は不要になった
   - イベントのアタッチがトップ要素に移譲されることで性能・メモリ効率が向上した
   - Uコンポーネントは任意のイベントを受け付け可能になった
-  - 型安全性が向上した
 - テンプレート部の TypeScript 対応
 - 自作のCSSパーサーを採用
 - 型定義ファイルの改善
+- Svelte 4 から漸進的に移行可能
 
 ---
 
@@ -603,3 +649,7 @@ SvelteKit (日本語版): <a target="_blank" href="https://kit.svelte.jp/">https
 ESLint Plugin Svelte: <a target="_blank" href="https://github.com/sveltejs/eslint-plugin-svelte">https://github.com/sveltejs/eslint-plugin-svelte</a>
 
 </p>
+
+---
+
+<Center>おしまい</Center>
